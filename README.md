@@ -23,7 +23,11 @@ Inicio · Nosotros · Líneas · Productos · Rider · Contacto
 - Navegación por páginas con menú fijo y menú adaptado a celular.
 - Efectos de parallax y animaciones al hacer scroll.
 - Secciones "¿Por qué Accexuri?" y preguntas frecuentes.
-- Botón flotante de WhatsApp.
+- Botones de WhatsApp y "volver arriba".
+- Pantalla de carga con el logo y transición animada entre páginas.
+- Comparador de las líneas Estándar, PRO y XTREME.
+- Galería con zoom en productos y equipamiento rider.
+- Página 404 personalizada.
 - Formulario de contacto con validación de campos.
 - Diseño responsive para computadora, tablet y celular.
 

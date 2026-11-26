@@ -1,5 +1,6 @@
 import { PRODUCTS } from '../data/content.js';
 import Eyebrow from './Eyebrow.jsx';
+import ZoomButton from './ZoomButton.jsx';
 
 export default function Products() {
   return (
@@ -14,7 +15,9 @@ export default function Products() {
           {PRODUCTS.items.map((p, i) => (
             <li key={p.title} data-tilt className={`pcard reveal${p.big ? ' pcard--big' : ''}${p.wide ? ' pcard--wide' : ''}`} style={{ '--d': `${(i % 3) * 90}ms` }}>
               <div className="pcard__img">
-                <img src={p.src} alt={p.title} width={p.w} height={p.h} loading="lazy" />
+                <ZoomButton items={PRODUCTS.items} index={i}>
+                  <img src={p.src} alt={p.title} width={p.w} height={p.h} loading="lazy" />
+                </ZoomButton>
               </div>
               <div className="pcard__body">
                 <h3>{p.title}</h3>

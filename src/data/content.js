@@ -219,3 +219,27 @@ export const STATEMENT = {
   text: 'El carácter de una moto no depende de su precio, sino de la esencia de quien la conduce.',
   sign: '— Misión Accexuri',
 };
+
+// Comparador de líneas (página Líneas). Basado en la descripción de cada línea del manual.
+// type 'level': barras del 1 al 3 · type 'swatch': muestra el color de la línea.
+export const COMPARE = {
+  eyebrow: 'Compara las líneas',
+  title: '¿Cuál va contigo?',
+  text: 'Las tres líneas comparten el ADN Accexuri. Cambian el nivel de rendimiento, el enfoque técnico y el tipo de uso.',
+  rows: [
+    { label: 'Color de empaque', type: 'swatch', values: ['Verde lima', 'Naranja', 'Turquesa'] },
+    { label: 'Enfoque', values: ['Día a día', 'Rendimiento superior', 'Tope de gama'] },
+    { label: 'Ideal para', values: ['Uso diario urbano', 'Uso urbano intensivo', 'Clima y asfalto exigentes'] },
+    { label: 'Materiales', values: ['Funcionales y cómodos', 'Técnicos', 'Máxima innovación técnica'] },
+    { label: 'Rendimiento', type: 'level', values: [1, 2, 3] },
+    { label: 'Durabilidad', type: 'level', values: [1, 2, 3] },
+    { label: 'Protección', type: 'level', values: [1, 2, 3] },
+  ],
+};
+
+// Página 404 (dirección que no existe).
+export const NOT_FOUND = {
+  eyebrow: 'Error 404',
+  title: 'Te saliste de la ruta.',
+  text: 'La página que buscas no existe o cambió de dirección. Vuelve a la vía principal y sigue rodando.',
+};
