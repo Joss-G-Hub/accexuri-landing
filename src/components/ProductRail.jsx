@@ -1,10 +1,11 @@
 import { RAIL } from '../data/content.js';
 import { to } from '../lib/router.js';
 
-// Sección fijada: al hacer scroll hacia abajo, los productos se desplazan de lado (scroll horizontal).
+// Riel de productos: mientras la sección cruza la pantalla, las tarjetas se deslizan de lado
+// al ritmo del scroll (sin que la página se detenga).
 export default function ProductRail() {
   return (
-    <section className="rail" data-pin style={{ '--n': RAIL.items.length }}>
+    <section className="rail" data-progress style={{ '--n': RAIL.items.length }}>
       <div className="rail__sticky">
         <div className="rail__x" aria-hidden="true"><img src="marca/isotipo-x.svg" alt="" /></div>
         <div className="container rail__head">

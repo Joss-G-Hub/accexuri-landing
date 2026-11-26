@@ -13,7 +13,7 @@ export default function PageHero({ page }) {
             <a href={to('inicio')}>Inicio</a> <span aria-hidden="true">/</span> <span aria-current="page">{page.title}</span>
           </nav>
           <p className="phero__eyebrow">{page.eyebrow}</p>
-          <h1 className="phero__title words">{page.title}<span className="neon">.</span></h1>
+          <h1 className="phero__title words">{page.title}</h1>
           <p className="phero__text">{page.text}</p>
         </div>
         <div className={`phero__media reveal-img${page.photo ? ' phero__media--photo' : ''}`} data-speed="-0.12">
