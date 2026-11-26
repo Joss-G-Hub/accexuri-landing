@@ -1,8 +1,12 @@
 import { RIDER } from '../data/content.js';
 import Eyebrow from './Eyebrow.jsx';
+import ZoomButton from './ZoomButton.jsx';
 
 export default function Rider() {
   const u = RIDER.uniforms;
+  // Listas para la galería con zoom.
+  const merch = RIDER.items.map((m) => ({ ...m, title: `${m.title} Accexuri` }));
+  const uniforms = u.images.map((im) => ({ ...im, title: u.title, text: im.alt }));
   return (
     <section id="rider" className="section">
       <div className="container">
@@ -15,7 +19,9 @@ export default function Rider() {
         <ul className="merch">
           {RIDER.items.map((m, i) => (
             <li key={m.title} data-tilt className={`merch__item reveal${m.light ? ' merch__item--light' : ''}`} style={{ '--d': `${i * 80}ms` }}>
-              <img src={m.src} alt={`${m.title} Accexuri`} width={m.w} height={m.h} loading="lazy" />
+              <ZoomButton items={merch} index={i}>
+                <img src={m.src} alt={`${m.title} Accexuri`} width={m.w} height={m.h} loading="lazy" />
+              </ZoomButton>
               <h3>{m.title}</h3>
             </li>
           ))}
@@ -27,7 +33,11 @@ export default function Rider() {
             <p>{u.text}</p>
           </div>
           <div className="uniforms__imgs">
-            {u.images.map((im) => <img key={im.src} src={im.src} alt={im.alt} width={im.w} height={im.h} loading="lazy" />)}
+            {u.images.map((im, i) => (
+              <ZoomButton key={im.src} items={uniforms} index={i}>
+                <img src={im.src} alt={im.alt} width={im.w} height={im.h} loading="lazy" />
+              </ZoomButton>
+            ))}
           </div>
         </div>
       </div>

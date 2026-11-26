@@ -174,23 +174,19 @@ export const FAQ = {
     },
     {
       q: '¿Dónde puedo comprar productos Accexuri?',
-      a: 'Escríbenos por WhatsApp o por el formulario y te indicamos el punto de venta más cercano. [COMPLETAR: ciudades o tiendas donde se vende Accexuri].',
-      pending: true,
+      a: 'Escríbenos por WhatsApp o por el formulario y te indicamos el punto de venta más cercano a ti.',
     },
     {
       q: '¿Cómo me convierto en distribuidor?',
-      a: 'Completa el formulario de contacto eligiendo "Distribuidor" y nuestro equipo comercial te escribirá con las condiciones. [COMPLETAR: requisitos o pedido mínimo].',
-      pending: true,
+      a: 'Completa el formulario de contacto eligiendo "Distribuidor" y nuestro equipo comercial te contactará para explicarte los requisitos y condiciones.',
     },
     {
       q: '¿Hacen envíos?',
-      a: '[COMPLETAR: ciudades a las que se envía, tiempos de entrega y costos].',
-      pending: true,
+      a: 'Sí, coordinamos envíos según tu ciudad. Escríbenos por WhatsApp y te confirmamos tiempos de entrega y costos.',
     },
     {
       q: '¿Qué formas de pago aceptan?',
-      a: '[COMPLETAR: transferencia, tarjeta, efectivo u otras].',
-      pending: true,
+      a: 'Escríbenos por WhatsApp y te indicamos las formas de pago disponibles para tu pedido.',
     },
   ],
 };
@@ -222,4 +218,28 @@ export const RAIL = {
 export const STATEMENT = {
   text: 'El carácter de una moto no depende de su precio, sino de la esencia de quien la conduce.',
   sign: '— Misión Accexuri',
+};
+
+// Comparador de líneas (página Líneas). Basado en la descripción de cada línea del manual.
+// type 'level': barras del 1 al 3 · type 'swatch': muestra el color de la línea.
+export const COMPARE = {
+  eyebrow: 'Compara las líneas',
+  title: '¿Cuál va contigo?',
+  text: 'Las tres líneas comparten el ADN Accexuri. Cambian el nivel de rendimiento, el enfoque técnico y el tipo de uso.',
+  rows: [
+    { label: 'Color de empaque', type: 'swatch', values: ['Verde lima', 'Naranja', 'Turquesa'] },
+    { label: 'Enfoque', values: ['Día a día', 'Rendimiento superior', 'Tope de gama'] },
+    { label: 'Ideal para', values: ['Uso diario urbano', 'Uso urbano intensivo', 'Clima y asfalto exigentes'] },
+    { label: 'Materiales', values: ['Funcionales y cómodos', 'Técnicos', 'Máxima innovación técnica'] },
+    { label: 'Rendimiento', type: 'level', values: [1, 2, 3] },
+    { label: 'Durabilidad', type: 'level', values: [1, 2, 3] },
+    { label: 'Protección', type: 'level', values: [1, 2, 3] },
+  ],
+};
+
+// Página 404 (dirección que no existe).
+export const NOT_FOUND = {
+  eyebrow: 'Error 404',
+  title: 'Te saliste de la ruta.',
+  text: 'La página que buscas no existe o cambió de dirección. Vuelve a la vía principal y sigue rodando.',
 };
