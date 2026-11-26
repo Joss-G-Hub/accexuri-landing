@@ -174,23 +174,19 @@ export const FAQ = {
     },
     {
       q: '¿Dónde puedo comprar productos Accexuri?',
-      a: 'Escríbenos por WhatsApp o por el formulario y te indicamos el punto de venta más cercano. [COMPLETAR: ciudades o tiendas donde se vende Accexuri].',
-      pending: true,
+      a: 'Escríbenos por WhatsApp o por el formulario y te indicamos el punto de venta más cercano a ti.',
     },
     {
       q: '¿Cómo me convierto en distribuidor?',
-      a: 'Completa el formulario de contacto eligiendo "Distribuidor" y nuestro equipo comercial te escribirá con las condiciones. [COMPLETAR: requisitos o pedido mínimo].',
-      pending: true,
+      a: 'Completa el formulario de contacto eligiendo "Distribuidor" y nuestro equipo comercial te contactará para explicarte los requisitos y condiciones.',
     },
     {
       q: '¿Hacen envíos?',
-      a: '[COMPLETAR: ciudades a las que se envía, tiempos de entrega y costos].',
-      pending: true,
+      a: 'Sí, coordinamos envíos según tu ciudad. Escríbenos por WhatsApp y te confirmamos tiempos de entrega y costos.',
     },
     {
       q: '¿Qué formas de pago aceptan?',
-      a: '[COMPLETAR: transferencia, tarjeta, efectivo u otras].',
-      pending: true,
+      a: 'Escríbenos por WhatsApp y te indicamos las formas de pago disponibles para tu pedido.',
     },
   ],
 };
