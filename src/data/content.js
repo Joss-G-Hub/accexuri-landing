@@ -243,3 +243,26 @@ export const NOT_FOUND = {
   title: 'Te saliste de la ruta.',
   text: 'La página que buscas no existe o cambió de dirección. Vuelve a la vía principal y sigue rodando.',
 };
+
+// Configurador (página Líneas): eliges línea y accesorios, y lo pides por WhatsApp.
+// Las fotos del rider por línea se recolorearon a partir de img/rider.webp.
+export const CONFIG = {
+  eyebrow: 'Configurador',
+  title: 'Arma tu setup.',
+  text: 'Elige tu línea, suma los accesorios que quieres y envíanos tu combinación por WhatsApp.',
+  images: { estandar: 'img/rider.webp', pro: 'img/rider-pro.webp', xtreme: 'img/rider-xtreme.webp' },
+  extras: ['Grips', 'Cubre palanca', 'Manga protectora', 'Bolsa canguro', 'Gorra', 'Tomatodo', 'Lanyard'],
+};
+
+// Página de Gracias (después de enviar el formulario).
+export const THANKS = {
+  eyebrow: 'Mensaje enviado',
+  title: '¡Gracias por escribirnos!',
+  text: 'Ya estás en la ruta. Recibimos tu mensaje y te responderemos al correo que nos dejaste.',
+  demo: 'Modo demostración: el formulario aún no está conectado a un correo, así que no se envió nada.',
+  steps: [
+    { title: 'Revisamos tu mensaje', text: 'Vemos qué accesorios y qué línea te interesan.' },
+    { title: 'Preparamos tu respuesta', text: 'Disponibilidad, precios y la línea que mejor va con tu moto.' },
+    { title: 'Te escribimos', text: 'Te contactamos para resolver dudas y cerrar tu pedido.' },
+  ],
+};

@@ -17,7 +17,9 @@ import BackToTop from './components/BackToTop.jsx';
 import Loader from './components/Loader.jsx';
 import Curtain from './components/Curtain.jsx';
 import NotFound from './components/NotFound.jsx';
+import Thanks from './components/Thanks.jsx';
 import Compare from './components/Compare.jsx';
+import Configurator from './components/Configurator.jsx';
 import Lightbox from './components/Lightbox.jsx';
 import FX from './components/FX.jsx';
 import ProductRail from './components/ProductRail.jsx';
@@ -31,12 +33,13 @@ import { usePageTransition } from './lib/transition.js';
 // Qué secciones muestra cada página del menú.
 const SECTIONS = {
   nosotros: [About, Why],
-  lineas: [Lines, Compare],
+  lineas: [Lines, Compare, Configurator],
   productos: [Products],
   rider: [Rider],
   contacto: [Contact, Faq],
 };
-const PAGE_IDS = ['inicio', ...Object.keys(SECTIONS)];
+// 'gracias' no aparece en el menú: se llega después de enviar el formulario.
+const PAGE_IDS = ['inicio', ...Object.keys(SECTIONS), 'gracias'];
 
 export default function App() {
   const target = useRoute(PAGE_IDS);
@@ -49,6 +52,8 @@ export default function App() {
       ? 'Accexuri — Accessories World | Accesorios para motos'
       : route === '404'
         ? 'Página no encontrada | Accexuri'
+        : route === 'gracias'
+          ? '¡Gracias! | Accexuri'
         : `${PAGES[route].title} | Accexuri`;
   }, [route]);
 
@@ -72,6 +77,8 @@ export default function App() {
           </>
         ) : route === '404' ? (
           <NotFound />
+        ) : route === 'gracias' ? (
+          <Thanks />
         ) : (
           <>
             <PageHero page={PAGES[route]} />
