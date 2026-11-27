@@ -4,7 +4,7 @@ import { to } from '../lib/router.js';
 export default function PageHero({ page }) {
   return (
     <section className="phero" data-progress>
-      <div className="phero__bg" data-speed="0.35" aria-hidden="true">
+      <div className="phero__bg" data-speed="0.15" aria-hidden="true">
         <img src="marca/isotipo-x.svg" alt="" />
       </div>
       <div className="container phero__grid">
@@ -16,7 +16,7 @@ export default function PageHero({ page }) {
           <h1 className="phero__title words">{page.title}</h1>
           <p className="phero__text">{page.text}</p>
         </div>
-        <div className={`phero__media reveal-img${page.photo ? ' phero__media--photo' : ''}`} data-speed="-0.12">
+        <div className={`phero__media reveal-img${page.photo ? ' phero__media--photo' : ''}`} data-speed="-0.06">
           <div className="phero__depth" style={{ '--depth': 18 }}>
             <img src={page.image} alt="" />
           </div>

@@ -26,9 +26,13 @@ export default function Lines() {
                 <span className="line__brand">accexuri</span> {l.name}
               </h3>
               <p>{l.text}</p>
-              <ul>
-                {l.points.map((p) => <li key={p}>{p}</li>)}
-              </ul>
+              <button
+                type="button"
+                className="line__more"
+                onClick={() => document.getElementById('comparar')?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })}
+              >
+                Comparar líneas <span aria-hidden="true">↓</span>
+              </button>
             </article>
           ))}
         </div>

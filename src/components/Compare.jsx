@@ -9,7 +9,7 @@ export default function Compare() {
   const cls = (i, base = '') => `${base}${col === i ? ' is-col' : ''}`;
 
   return (
-    <section className="section cmp-section">
+    <section id="comparar" className="section cmp-section">
       <div className="container">
         <div className="section__head reveal">
           <Eyebrow>{COMPARE.eyebrow}</Eyebrow>

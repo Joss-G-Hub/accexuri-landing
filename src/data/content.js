@@ -50,21 +50,18 @@ export const LINES = {
       name: 'Estándar',
       tag: 'Empaque verde lima',
       text: 'Diseñada para el día a día: soluciones prácticas que combinan funcionalidad, comodidad y un estilo accesible, con una excelente relación calidad-precio.',
-      points: ['Uso diario urbano', 'Funcionalidad y comodidad', 'Mejor relación calidad-precio'],
     },
     {
       key: 'pro',
       name: 'PRO',
       tag: 'Empaque naranja',
       text: 'Para usuarios exigentes que requieren un rendimiento superior: materiales técnicos y diseño de ingeniería avanzada que optimizan la durabilidad en uso urbano frecuente.',
-      points: ['Materiales técnicos', 'Mayor durabilidad', 'Uso urbano intensivo'],
     },
     {
       key: 'xtreme',
       name: 'XTREME',
       tag: 'Empaque turquesa',
       text: 'El tope de gama: máxima innovación técnica para ofrecer protección superior y resistencia total frente al clima y el asfalto.',
-      points: ['Máxima protección', 'Resistencia total', 'Innovación técnica'],
     },
   ],
 };
@@ -203,7 +200,7 @@ export const WHATSAPP = {
 // Riel horizontal de productos (sección fijada que se desplaza de lado al hacer scroll).
 export const RAIL = {
   eyebrow: 'Productos en movimiento',
-  title: 'Diseño con actitud.',
+  title: 'Lo más destacado.',
   items: [
     { src: 'img/empaque-premium.webp', title: 'Empaques premium', tag: 'Productos top', line: 'xtreme' },
     { src: 'img/empaque-grips.webp', title: 'Empaque universal', tag: 'Línea Estándar', line: 'estandar' },

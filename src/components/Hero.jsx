@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section id="inicio" className="hero">
       <div className="hero__mega" aria-hidden="true">accessories world · accessories world · accessories world</div>
-      <div className="hero__glow" data-speed="0.4" aria-hidden="true" style={{ backgroundImage: 'url(marca/isotipo-x.svg)' }} />
+      <div className="hero__glow" data-speed="0.2" aria-hidden="true" style={{ backgroundImage: 'url(marca/isotipo-x.svg)' }} />
       <div className="container hero__grid">
         <div className="hero__copy">
           <img className="hero__logo" src="marca/logo-accexuri-negativo.svg" alt="Accexuri" width="360" height="40" />
@@ -19,7 +19,7 @@ export default function Hero() {
             <a className="btn btn--ghost btn--lg" href={HERO.secondary.href}>{HERO.secondary.label}</a>
           </div>
         </div>
-        <div className="hero__media" data-speed="-0.1">
+        <div className="hero__media" data-speed="-0.05">
           <div className="hero__frame hero__depth" style={{ '--depth': 14 }}>
             <img src={HERO.image} alt="Motociclista con traje verde y negro de Accexuri sobre su moto en la ciudad" width="605" height="900" fetchpriority="high" />
           </div>

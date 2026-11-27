@@ -5,7 +5,7 @@ import { to } from '../lib/router.js';
 export default function CtaBand() {
   return (
     <section className="cta">
-      <div className="cta__x" data-speed="0.25" aria-hidden="true"><img src="marca/isotipo-x.svg" alt="" /></div>
+      <div className="cta__x" data-speed="0.12" aria-hidden="true"><img src="marca/isotipo-x.svg" alt="" /></div>
       <div className="container cta__inner reveal">
         <div>
           <h2 className="h2">{CTA.title}</h2>

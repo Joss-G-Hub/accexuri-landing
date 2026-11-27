@@ -72,7 +72,6 @@ export default function App() {
             <Statement />
             <ProductRail />
             <Teasers />
-            <Why />
             <CtaBand />
           </>
         ) : route === '404' ? (
